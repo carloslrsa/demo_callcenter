@@ -1,17 +1,21 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "call_center",
+    'name': "Modulo Call Center",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Modulo para operadores de Call Center
+        """,
 
     'description': """
-        Long description of module's purpose
+        El módulo se encarga de presentar un portal de acceso
+        a los operadores del Área de Call Center de la empresa
+        Taxi Monterrico, en el cual pueda permitirle atender las
+        comunicaciones vía telefónica como son la atención de incidentes,
+        quejas y demás; de manera integrada con las demás áreas de la empresa.
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "Equipo de Call Center",
+    'website': "http://es.dota2.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
@@ -25,11 +29,12 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        #'views/views.xml',
+        #'views/templates.xml',
     ],
+    'application' : True,
     # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
+    #'demo': [
+    #    'demo/demo.xml',
+    #],
 }
