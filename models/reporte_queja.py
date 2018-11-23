@@ -12,3 +12,4 @@ class ReporteQueja(models.Model):
 	telefono = fields.Char(string="Telefono")
 	email = fields.Char(string="Email")
 	estado = fields.Selection([('Recibido','Recibido'), ('Procesando', 'Procesando'),('Aceptado', 'Aceptado'), ('Rechazado','Rechazado')], string="Estado")
+	descripcion = fields.Text("Descripcion")
