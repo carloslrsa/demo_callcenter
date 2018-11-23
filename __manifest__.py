@@ -31,6 +31,7 @@
         # 'security/ir.model.access.csv',
         #'views/views.xml',
         #'views/templates.xml',
+        'views/reportequeja_view.xml',
     ],
     'application' : True,
     # only loaded in demonstration mode
