@@ -8,14 +8,14 @@
 			<form string="Form Queja">
 				<sheet>
 					<group>
-						<header>Datos del cliente</header>
+						<h1>Datos del cliente</h1>
 						<field name="nombres"></field>
 						<field name="direccion"></field>
 						<field name="telefono"></field>
 						<field name="email"></field>
 					</group>
 					<group>
-						<header>Descripcion de la queja</header>
+						<h1>Descripcion de la queja</h1>
 						<field name="id"></field>
 						<field name="tipo"></field>
 						<field name="estado"></field>
