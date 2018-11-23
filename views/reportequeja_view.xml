@@ -8,13 +8,13 @@
 			<form string="Form Queja">
 				<sheet>
 					<group>
-						<field name = "id"></field>
-						<field name = "tipo"></field>
-						<field name = "nombres"></field>
-						<field name = "direccion"></field>
-						<field name = "telefono"></field>
-						<field name = "email"></field>
-						<field name = "estado"></field>
+						<field name="id"></field>
+						<field name="tipo"></field>
+						<field name="nombres"></field>
+						<field name="direccion"></field>
+						<field name="telefono"></field>
+						<field name="email"></field>
+						<field name="estado"></field>
 					</group>
 				</sheet>
 			</form>
@@ -38,8 +38,8 @@
 		view_mode="tree,form"
 		/>
 
-	<menuitem id="reporte_menu_root" name="Reportes" sequence="1"></menuitem>
-	<menuitem id="reporte_queja_menu_category" name="Quejas" sequence="1" parent="reporte_menu_root"></menuitem>
+	<menuitem id="reporte_menu_root" name="Call Center" sequence="1"></menuitem>
+	<menuitem id="reporte_queja_menu_category" name="Reportes" sequence="1" parent="reporte_menu_root"></menuitem>
 	<menuitem id="action_reporte_queja_menu" name="Quejas" sequence="1" parent="reporte_queja_menu_category" action="action_reporte_queja"></menuitem>
 
 </odoo>
