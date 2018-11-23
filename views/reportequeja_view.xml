@@ -1,44 +1,12 @@
 <?xml version="1.0"?>
 <odoo>
-	<record id="reporte_queja_form_view" model="ir.ui.view">
-		<field name="name">reporte.queja.form.view</field>
-		<field name="model">reporte.queja</field>
-		<field name="arch" type="xml">
-			<form string="Form Queja">
-				<sheet>
-					<group>
-						<field name = "id"></field>
-						<field name = "tipo"></field>
-						<field name = "nombres"></field>
-						<field name = "direccion"></field>
-						<field name = "telefono"></field>
-						<field name = "email"></field>
-						<field name = "estado"></field>
-					</group>
-				</sheet>
-			</form>
-		</field>
-	</record>
-
-	<record id="reporte_queja_tree_view" model="ir.ui.view">
-		<field name="name">reporte.queja.tree.view</field>
-		<field name="model">reporte.queja</field>
-		<field name="arch" type="xml">
-			<tree string="Tree Queja">
-				<field name="nombres"></field>
-				<field name="email"></field>
-			</tree>
-		</field>
-	</record>
-	
-	<record id="action_reporte_queja" model="ir.actions.act_window">
-		<field name="name">action.reporte.queja</field>
-		<field name="type">ir.actions.act_window</field>
-		<field name="res_model">reporte.queja</field>
-		<field name="view_mode">tree,form</field>
-	</record>
-
-	<menuitem id="reporte_menu_root" name="Reportes" sequence="1"></menuitem>
-	<menuitem id="reporte_queja_menu_category" name="Quejas" sequence="1" parent="reporte_menu_root"></menuitem>
-	<menuitem id="action_reporte_queja_menu" name="Quejas" sequence="1" parent="reporte_queja_menu_category"></menuitem>
+	<act_window id="action_reporte_queja_menu"
+		name="Modulo Call Center"
+		res_model="reporte.queja"
+		view_mode="tree,form"
+		/>
+	<menuitem id="menu_queja"
+		name="Queja"
+		action="action_queja"
+		/>
 </odoo>
