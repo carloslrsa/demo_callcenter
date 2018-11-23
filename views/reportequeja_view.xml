@@ -8,12 +8,16 @@
 			<form string="Form Queja">
 				<sheet>
 					<group>
-						<field name="id"></field>
-						<field name="tipo"></field>
+						<header>Datos del cliente</header>
 						<field name="nombres"></field>
 						<field name="direccion"></field>
 						<field name="telefono"></field>
 						<field name="email"></field>
+					</group>
+					<group>
+						<header>Descripcion de la queja</header>
+						<field name="id"></field>
+						<field name="tipo"></field>
 						<field name="estado"></field>
 						<field name="descripcion"></field>
 					</group>
