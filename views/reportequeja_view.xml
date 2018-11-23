@@ -7,6 +7,6 @@
 		/>
 	<menuitem id="menu_queja"
 		name="Queja"
-		action="action_queja"
+		action="action_reporte_queja_menu"
 		/>
 </odoo>
