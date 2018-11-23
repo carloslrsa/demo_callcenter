@@ -31,12 +31,11 @@
 		</field>
 	</record>
 	
-	<record id="action_reporte_queja" model="ir.actions.act_window">
-		<field name="name">action.reporte.queja</field>
-		<field name="type">ir.actions.act_window</field>
-		<field name="res_model">reporte.queja</field>
-		<field name="view_mode">tree,form</field>
-	</record>
+	<act_window id="action_reporte_queja"
+		name="action.reporte.queja"
+		model="ir.actions.act_window"
+		res_model="reporte.queja"
+		view_mode="tree,form"/>
 
 	<menuitem id="reporte_menu_root" name="Reportes" sequence="1"></menuitem>
 	<menuitem id="reporte_queja_menu_category" name="Quejas" sequence="1" parent="reporte_menu_root"></menuitem>
